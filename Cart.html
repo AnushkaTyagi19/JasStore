@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Product Jas store! </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="image/ja logo.jpg" width="125px">
+                </div>
+                <!-- <div class="nav"></div> -->
+                 <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product.html">Products</a></li>
+                        <li><a href="Product details.html">About</a></li>
+                        <li><a href="Account.html">Account</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                 </nav>
+                 <img src="image/Menu.png" class="menu" onclick="menutoggle()">
+            </div>
+        </div>
+        <!--  cart item details       -->
+    <div class="smallContainer cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="image/cj9263-001-10-nike-desert-sand-gym-red-white-original-imafh3zzhfzxfmgr.jpg">
+                        <div>
+                            <p>Air Jordan 1 Low SE</p>
+                            <small>Pricr : &#8377 10295.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377 10295.00</td>
+            </tr>            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="image/Product17.webp">
+                        <div>
+                            <p>Nike Air Force 1 '07 LV8</p>
+                            <small>Pricr : &#8377 8695.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377 8695.00</td>
+            </tr>            
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="image/Product19.webp">
+                        <div>
+                            <p>Air Jordan 1 Mid SE</p>
+                            <small>Pricr : &#8377 12295.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377 12295.00</td>
+            </tr>            
+            
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>&#8377 3333</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>&#8377 3333</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>&#8377 3333</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+    </div>
+<!---Product-->
+<!-- single product details -->
+<!-- title -->
+<!-- <div class="smallContainer"> -->
+<!-- <h2 class="title">Featured Products</h2> -->  
+<!---------offer-->
+<!----------testimonial-->
+<!------brands--->
+<!-----------------Footer--------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Donload Our App</h3>
+                <p>Download App For Android And ios Mobile Phone.</p>
+                <div class="app-logo">
+                    <img src="image/Google-app-logo.png">
+                    <img src="image/App-store-logo.jpg">
+                </div>
+            </div>
+            <div class="footer-col2">
+                <img src="image/ja logo.jpg">
+<!-- <p>Download App For Android And ios Mobile Phone.</p> -->
+            </div>
+            <div class="footer-col3">
+                <h3>Usefull Link</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Jion Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------- js for toggle -->
+<script>
+    var MenuItems =document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+
+</body>
+</html>
